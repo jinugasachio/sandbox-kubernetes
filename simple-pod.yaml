@@ -8,7 +8,7 @@ spec:
     image: gihyodocker/nginx:latest 
     env: 
     - name: BACKEND_HOST
-      value: localhost:8080
+      value: localhost:8080 # echoコンテナへはlocalhostで名前解決される
     ports:
     - containerPort: 80 
   - name: echo
